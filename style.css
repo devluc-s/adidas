@@ -235,7 +235,7 @@ img{
 }
 .grid-container::after{
   content: '';
-  background: url(/logo.svg) center no-repeat;
+  background: url(https://user-images.githubusercontent.com/85721650/164946421-802c2c59-1ea9-459e-91bb-11593f8d6c40.svg) center no-repeat;
   position: absolute;
   left: 0;
   top: 0;
