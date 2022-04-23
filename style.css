@@ -259,7 +259,7 @@ img{
   right: 0;
   left: 0;
   z-index: 99;
-  background: rgb(255 255 255 / .8);
+  background: #fff;
   padding: 15px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -309,17 +309,17 @@ img{
 }
 .botao-compra:hover{
   box-shadow: 
-  -5px -5px 0px 0px #eceef0,
+  -5px -5px 0px 0px #fff,
   -5px -5px 0px 1px rgb(0 0 0 / 80%),
-  5px 5px 0px 0px #eceef0,
+  5px 5px 0px 0px #fff,
   5px 5px 0px 1px rgb(0 0 0 / 80%);
-  -webkit-box-shadow: -5px -5px 0px 0px #eceef0,
+  -webkit-box-shadow: -5px -5px 0px 0px #fff,
   -5px -5px 0px 1px rgb(0 0 0 / 80%),
-  5px 5px 0px 0px #eceef0,
+  5px 5px 0px 0px #fff,
   5px 5px 0px 1px rgb(0 0 0 / 80%);
-  -moz-box-shadow: -5px -5px 0px 0px #eceef0,
+  -moz-box-shadow: -5px -5px 0px 0px #fff,
   -5px -5px 0px 1px rgb(0 0 0 / 80%),
-  5px 5px 0px 0px #eceef0,
+  5px 5px 0px 0px #fff,
   5px 5px 0px 1px rgb(0 0 0 / 80%);
 }
 
