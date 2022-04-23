@@ -250,9 +250,7 @@ img{
 .item-1{
   grid-area: span 2 / span 2 / auto;
 }
-.item-6{
-  grid-column: 3;
-}
+
 /* COMPRAR */
 
 .modal-compra{
@@ -332,6 +330,9 @@ img{
   .modal-compra ul{
     grid-column: 1;
   }
+  .item-6{
+    grid-area: 3/2/span 2/4;
+  }
 }
 
 @media (max-width: 767px){
@@ -339,5 +340,10 @@ img{
   .item-1{
     grid-area: auto/1/auto/-1;
   }
+  .item-6 {
+    grid-area: 4/2/span 2/4;
 }
-
+  .item-2{
+    grid-area: span 2/1/auto/3;
+  }
+}
