@@ -211,7 +211,8 @@ template {
 }
 
 body{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif, Georgia, 'Times New Roman', Times, serif;
+  background: #f5f5f5;
   color: #141414;
   line-height: 1.4;
 }
