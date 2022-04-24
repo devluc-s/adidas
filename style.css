@@ -319,6 +319,7 @@ img{
 }
 
 .cores li{
+  position: relative;
   font-weight: 700;
   cursor: pointer;
   display: inline-block;
@@ -363,7 +364,28 @@ img{
 .preco{
   font-size: 20px;
 }
-
+.active::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 7px;
+  margin: 0 auto;
+  width: 8px;
+  height: 15px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+/* SLIDE */
+.fade {
+  animation-name: fade;
+  animation-duration: 200ms;
+}@keyframes fade {
+  50%{
+    opacity: .4;
+  }
+}
 /* MEDIA QUERIES */
 
 
