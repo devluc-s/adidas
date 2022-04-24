@@ -397,6 +397,9 @@ img{
   .item-6{
     grid-area: 3/2/span 2/4;
   }
+   .botao-compra{
+    align-self: flex-end;
+  }
 }
 
 @media (max-width: 767px){
