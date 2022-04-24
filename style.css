@@ -229,6 +229,9 @@ img{
 .grid-container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
   align-items: flex-end;
   gap: .5vw;
   grid-gap: .5vw;
@@ -261,16 +264,21 @@ img{
   left: 0;
   z-index: 99;
   background: #fff;
-  padding: 15px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  gap: 20px 15px;
-  grid-gap: 20px 15px;
   box-shadow: 2px -4px 5px 1px rgb(0, 0, 0, .1);
   -webkit-box-shadow: 2px -4px 5px 1px rgb(0, 0, 0, .1);
     -moz-box-shadow: 2px -4px 5px 1px rgb(0, 0, 0, .1);
 }
+
+.modal-compra>:nth-child(n){
+  padding: 15px;
+}
+
 .titulo{
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -299,29 +307,33 @@ img{
 .botao-compra {
   background: #2ada71;
   text-transform: uppercase;
-  padding: 10px 20px;
   font-weight: 700;
-  text-align: center;
-  transition: box-shadow ease-in-out 500ms;
-  -moz-transition: box-shadow ease-in-out 500ms;
-    -o-transition: box-shadow ease-in-out 500ms;
-    -webkit-transition: box-shadow ease-in-out 500ms;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  align-self: stretch;
+  color: #fff;
+  -webkit-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+  transition: background ease-in-out 500ms;
+  -moz-transition: background ease-in-out 500ms;
+    -o-transition: background ease-in-out 500ms;
+    -webkit-transition: background ease-in-out 500ms;
 }
 .botao-compra:hover{
-  box-shadow: 
-  -5px -5px 0px 0px #fff,
-  -5px -5px 0px 1px rgb(0 0 0 / 80%),
-  5px 5px 0px 0px #fff,
-  5px 5px 0px 1px rgb(0 0 0 / 80%);
-  -webkit-box-shadow: -5px -5px 0px 0px #fff,
-  -5px -5px 0px 1px rgb(0 0 0 / 80%),
-  5px 5px 0px 0px #fff,
-  5px 5px 0px 1px rgb(0 0 0 / 80%);
-  -moz-box-shadow: -5px -5px 0px 0px #fff,
-  -5px -5px 0px 1px rgb(0 0 0 / 80%),
-  5px 5px 0px 0px #fff,
-  5px 5px 0px 1px rgb(0 0 0 / 80%);
+  background: rgb(42 218 113 / .8);
 }
+
 
 
 /* MEDIA QUERIES */
@@ -348,3 +360,4 @@ img{
     grid-area: span 2/1/auto/3;
   }
 }
+
