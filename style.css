@@ -230,8 +230,8 @@ img{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: flex-end;
-  gap: 10px;
-  grid-gap: 10px;
+  gap: .5vw;
+  grid-gap: .5vw;
   position: relative;
   z-index: 1;
 }
@@ -246,6 +246,7 @@ img{
   height: 100%;
   filter: opacity(0.02);
   background-size: cover;
+  background-attachment: fixed;
 }
 .item-1{
   grid-area: span 2 / span 2 / auto;
