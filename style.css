@@ -397,9 +397,7 @@ footer{
 }
 /* LOADER */
 
-/* Loader Styles start here */
 .css-RsFvJ {
-  --curtain-color: #f1faee;
   position:fixed;
   top:0;
   left:0;
@@ -425,7 +423,7 @@ footer{
 .css-RsFvJ .css-vfZX7 {
   position:fixed;
   top:0;
-  background:var(--curtain-color);
+  background:var(---bg-color-primary);
   width:51%;
   height:100%;
   z-index:1000;
@@ -438,23 +436,34 @@ footer{
   right:0;
 }
 
-/* css-HD7dt Styles */ 
 .css-HD7dt .css-RsFvJ .css-vfZX7.css-GoEbi {
   transform: translateX(-100%);
   transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+  -moz-transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+  -o-transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
 }
 .css-HD7dt .css-RsFvJ .css-vfZX7.css-HWjqo {
   transform: translateX(100%);
   transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+  -moz-transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+  -o-transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
 }
 .css-HD7dt .css-6bBso {
   opacity: 0;
   transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
 }
 .css-HD7dt .css-RsFvJ {
   visibility: hidden;
   transform:translateY(-100%);
   transition: all .3s 1s ease-out;
+  -moz-transition: all .3s 1s ease-out;
+  -o-transition: all .3s 1s ease-out;
+  -webkit-transition: all .3s 1s ease-out;
 }
 /* MEDIA QUERIES */
 
@@ -483,4 +492,3 @@ footer{
     grid-area: span 2/1/auto/3;
   }
 }
-
