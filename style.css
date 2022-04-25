@@ -245,7 +245,6 @@ img{
   grid-gap: .5vw;
   position: relative;
   z-index: 1;
-  margin-bottom: 250px;
 }
 .grid-container::after{
   content: '';
@@ -396,6 +395,14 @@ img{
     opacity: .4;
   }
 }
+
+footer{
+  height: 250px;
+  padding: 30px;
+  text-align: center;
+  opacity: .2;
+}
+
 /* MEDIA QUERIES */
 
 
