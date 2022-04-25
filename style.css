@@ -273,6 +273,7 @@ img{
   word-break: normal;
   margin: 0;
   line-height: 1;
+  z-index: 9;
 }
 /* COMPRAR */
 
