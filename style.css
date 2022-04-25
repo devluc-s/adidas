@@ -214,12 +214,13 @@ template {
   ---timing:500ms;
   ---bg-color-primary:rgb(245 245 245);
   ---bg-color-secondary:rgb(0 0 0 / .3);
+  ---bg-color-tertiary:rgb(231 233 235);
 }
 
 
 body{
   font-family: 'Lato', sans-serif, Georgia, 'Times New Roman', Times, serif;
-  background: var(---bg-color-primary);
+  background: var(---bg-color-tertiary);
   color: #333;
   line-height: 1.4;
 }
@@ -244,6 +245,7 @@ img{
   grid-gap: .5vw;
   position: relative;
   z-index: 1;
+  margin-bottom: 250px;
 }
 .grid-container::after{
   content: '';
