@@ -210,9 +210,16 @@ template {
   display: none;
 }
 
+:root{
+  ---timing:500ms;
+  ---bg-color-primary:rgb(245 245 245);
+  ---bg-color-secondary:rgb(0 0 0 / .3);
+}
+
+
 body{
   font-family: 'Lato', sans-serif, Georgia, 'Times New Roman', Times, serif;
-  background: #f5f5f5;
+  background: var(---bg-color-primary);
   color: #333;
   line-height: 1.4;
 }
@@ -275,16 +282,16 @@ img{
   right: 0;
   left: 0;
   z-index: 99;
-  background: #fff;
+  background: var(---bg-color-primary);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  box-shadow: 2px -4px 5px 1px rgb(0, 0, 0, .1);
-  -webkit-box-shadow: 2px -4px 5px 1px rgb(0, 0, 0, .1);
-    -moz-box-shadow: 2px -4px 5px 1px rgb(0, 0, 0, .1);
+  box-shadow: 2px -4px 5px 1px rgb(218 220 221);
+  -webkit-box-shadow: 2px -4px 5px 1px rgb(218 220 221);
+    -moz-box-shadow: 2px -4px 5px 1px rgb(218 220 221);
 }
 
 .modal-compra>:nth-child(n){
@@ -303,19 +310,19 @@ img{
   font-weight: 700;
   cursor: pointer;
   display: inline-block;
-  box-shadow: inset 1px -1px 0px 0px rgb(0 0 0 / .3);
-  -webkit-box-shadow: inset 1px -1px 0px 0px rgb(0 0 0 / .3);
-  -moz-box-shadow: inset 1px -1px 0px 0px rgb(0 0 0 / .3);
-  transition: box-shadow ease-in-out 500ms;
-  -moz-transition: box-shadow ease-in-out 500ms;
-    -o-transition: box-shadow ease-in-out 500ms;
-    -webkit-transition: box-shadow ease-in-out 500ms;
+  box-shadow: inset 1px -1px 0px 0px var(---bg-color-secondary);
+  -webkit-box-shadow: inset 1px -1px 0px 0px var(---bg-color-secondary);
+  -moz-box-shadow: inset 1px -1px 0px 0px var(---bg-color-secondary);
+  transition: box-shadow ease-in-out var(---timing);
+  -moz-transition: box-shadow ease-in-out var(---timing);
+    -o-transition: box-shadow ease-in-out var(---timing);
+    -webkit-transition: box-shadow ease-in-out var(---timing);
 }
 
 .tamanhos li:hover{
-  box-shadow: inset -1px 1px 0px 0px rgb(0 0 0 / 30%);
-  -webkit-box-shadow: inset -1px 1px 0px 0px rgb(0 0 0 / 30%);
-  -moz-box-shadow: inset -1px 1px 0px 0px rgb(0 0 0 / 30%);
+  box-shadow: inset -1px 1px 0px 0px var(---bg-color-secondary);
+  -webkit-box-shadow: inset -1px 1px 0px 0px var(---bg-color-secondary);
+  -moz-box-shadow: inset -1px 1px 0px 0px var(---bg-color-secondary);
 }
 
 .cores li{
@@ -326,9 +333,9 @@ img{
   width: 32.4px;
   height: 32.4px;
   border-radius: 50px;
-  box-shadow: 0px 0px 0px 1px rgb(0 0 0 / .3);
-  -webkit-box-shadow: 0px 0px 0px 1px rgb(0 0 0 / .3);
-  -moz-box-shadow: 0px 0px 0px 1px rgb(0 0 0 / .3);
+  box-shadow: 0px 0px 0px 1px var(---bg-color-secondary);
+  -webkit-box-shadow: 0px 0px 0px 1px var(---bg-color-secondary);
+  -moz-box-shadow: 0px 0px 0px 1px var(---bg-color-secondary);
 }
 
 .botao-compra {
@@ -352,10 +359,10 @@ img{
   -webkit-user-select: none; 
   -ms-user-select: none; 
   user-select: none; 
-  transition: background ease-in-out 500ms;
-  -moz-transition: background ease-in-out 500ms;
-    -o-transition: background ease-in-out 500ms;
-    -webkit-transition: background ease-in-out 500ms;
+  transition: background ease-in-out var(---timing);
+  -moz-transition: background ease-in-out var(---timing);
+    -o-transition: background ease-in-out var(---timing);
+    -webkit-transition: background ease-in-out var(---timing);
 }
 .botao-compra:hover{
   background: rgb(42 218 113 / .8);
@@ -397,7 +404,7 @@ img{
   .item-6{
     grid-area: 3/2/span 2/4;
   }
-   .botao-compra{
+  .botao-compra{
     align-self: flex-end;
   }
 }
@@ -413,4 +420,3 @@ img{
     grid-area: span 2/1/auto/3;
   }
 }
-
