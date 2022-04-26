@@ -283,7 +283,6 @@ img{
   right: 0;
   left: 0;
   z-index: 99;
-  font-size: 20px;
   background: var(---bg-color-primary);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -363,6 +362,9 @@ img{
   background: rgb(42 218 113 / .8);
 }
 
+.css-iJQFK{
+  font-size: 20px;
+}
 .active::after{
   content: '';
   position: absolute;
@@ -489,3 +491,4 @@ footer{
     grid-area: span 2/1/auto/3;
   }
 }
+
