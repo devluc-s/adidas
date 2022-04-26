@@ -255,13 +255,12 @@ img{
   z-index: 22;
   width: 100%;
   height: 100%;
-  filter: opacity(0.02);
+  opacity: 0.010;
   background-size: cover;
   background-attachment: fixed;
 }
 .css-ROg45{
   grid-area: span 2 / span 2 / auto;
-  position: relative;
 }
 
 .css-2gvcr{
@@ -284,6 +283,7 @@ img{
   right: 0;
   left: 0;
   z-index: 99;
+  font-size: 20px;
   background: var(---bg-color-primary);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -363,9 +363,6 @@ img{
   background: rgb(42 218 113 / .8);
 }
 
-.css-iJQFK{
-  font-size: 20px;
-}
 .active::after{
   content: '';
   position: absolute;
@@ -492,4 +489,3 @@ footer{
     grid-area: span 2/1/auto/3;
   }
 }
-
